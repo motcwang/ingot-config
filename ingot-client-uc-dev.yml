@@ -6,13 +6,6 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
     default-property-inclusion: non_null
-  redis:
-    database: 1
-    host: ${REDIS_HOST:ingot-db-redis}
-    port: ${REDIS_PORT:6379}
-    jedis:
-      pool:
-        max-active: 20
   datasource:
     url: jdbc:mysql://ingot-db-mysql:3306/ingot_uc_db?useUnicode=true&characterEncoding=UTF8&useSSL=false
 
