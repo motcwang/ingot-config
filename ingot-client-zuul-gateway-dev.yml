@@ -83,4 +83,4 @@ ingot:
   oauth2:
     resource:
       permit:
-        - /api/ac/auth/login
+        - /ac/auth/login
