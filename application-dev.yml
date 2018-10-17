@@ -5,8 +5,10 @@ server:
   use-forward-headers: true
 
 management:
-  security:
-    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 
 spring:
   jackson:
