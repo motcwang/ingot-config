@@ -37,7 +37,18 @@ zuul:
         OkToRetryOnAllOperations: false
         ConnectTimeout: 10000
         ReadTimeout: 10000
-
+    hwtv-admin:
+      sensitiveHeaders:
+      path: /hwadmin/**
+      service-id: ingot-hwtv-admin
+      ribbon:
+        eager-load:
+          enabled: true
+        MaxAutoRetries: 1
+        MaxAutoRetriesNextServer: 2
+        OkToRetryOnAllOperations: false
+        ConnectTimeout: 10000
+        ReadTimeout: 10000
 
 management:
   endpoint:
@@ -80,3 +91,4 @@ ingot:
     resource:
       permit:
         - /ac/auth/login
+        - /hwadmin/login
