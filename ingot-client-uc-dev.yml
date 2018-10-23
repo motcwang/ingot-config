@@ -36,3 +36,5 @@ ingot:
       permit:
         - /token
         - /test/auth
+
+test: 2
