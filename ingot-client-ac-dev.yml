@@ -8,14 +8,7 @@ spring:
 
 mybatis:
   type-aliases-package: com.ingot.auth.model.domain
-  mapper-locations: classpath*:mapper/*.xml
-  configuration:
-    map-underscore-to-camel-case: true
-
-mapper:
-  not-empty: true
-  mappers: com.ingot.common.mybatis.MyMapper
-  identity: MYSQL
+  mapper-locations: classpath*:mapper/*.xml,classpath*:sdk/mapper/*.xml
 
 security:
   oauth2:

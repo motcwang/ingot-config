@@ -18,3 +18,18 @@ spring:
         login-password: admin
       connection-init-sqls:
       - SET NAMES utf8mb4
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+mapper:
+  not-empty: true
+  mappers: com.ingot.common.mybatis.MyMapper
+  identity: MYSQL
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
