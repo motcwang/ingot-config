@@ -80,3 +80,4 @@ ingot:
     resource:
       permit:
         - /ac/auth/login
+        - /ac/auth/admin/login
