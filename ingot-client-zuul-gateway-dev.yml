@@ -40,7 +40,7 @@ zuul:
     hwtv-admin:
       sensitiveHeaders:
       path: /mm/**
-      service-id: ingot-hwtv-admin
+      service-id: ingot-mt-message
       ribbon:
         eager-load:
           enabled: true
