@@ -39,7 +39,7 @@ zuul:
         ReadTimeout: 10000
     hwtv-admin:
       sensitiveHeaders:
-      path: /hwadmin/**
+      path: /mm/**
       service-id: ingot-hwtv-admin
       ribbon:
         eager-load:
@@ -81,7 +81,7 @@ security:
       user-info-uri: http://ingot-auth-center:8050/user
       prefer-token-info: false
       jwt:
-        key-uri: http://ingot-auth-center:8050/oauth/token_key
+        key-uri: http://ingot-auth-center:8051/oauth/token_key
 
 ingot:
   application:
@@ -90,5 +90,4 @@ ingot:
   oauth2:
     resource:
       permit:
-        - /ac/auth/login
-        - /hwadmin/login
+        - /**
