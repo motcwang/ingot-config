@@ -81,7 +81,7 @@ security:
       user-info-uri: http://ingot-auth-center:8050/user
       prefer-token-info: false
       jwt:
-        key-uri: http://ingot-auth-center:8051/oauth/token_key
+        key-uri: http://ingot-auth-center:8050/oauth/token_key
 
 ingot:
   application:

@@ -25,14 +25,14 @@ security:
     client:
       client-id: ${spring.application.name}
       client-secret: ingotHwtvAdminSecret
-      access-token-uri: http://ingot-auth-center:8051/oauth/token
-      user-authorization-uri: http://ingot-auth-center:8051/oauth/authorize
+      access-token-uri: http://ingot-auth-center:8050/oauth/token
+      user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
     resource:
       id: mt-message-resource
-      user-info-uri: http://ingot-auth-center:8051/user
+      user-info-uri: http://ingot-auth-center:8050/user
       prefer-token-info: false
       jwt:
-        key-uri: http://ingot-auth-center:8051/oauth/token_key
+        key-uri: http://ingot-auth-center:8050/oauth/token_key
 
 ingot:
   application:
