@@ -37,7 +37,7 @@ zuul:
         OkToRetryOnAllOperations: false
         ConnectTimeout: 10000
         ReadTimeout: 10000
-    hwtv-admin:
+    mt-message:
       sensitiveHeaders:
       path: /mm/**
       service-id: ingot-mt-message
@@ -90,4 +90,4 @@ ingot:
   oauth2:
     resource:
       permit:
-        - /**
+        - /mm/giz/**
