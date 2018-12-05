@@ -29,6 +29,5 @@ ingot:
     rsaSecret: 1asd21!@#asd12
     resource:
       permit:
-      - /auth/code/**
       - /login
       - /test/a
