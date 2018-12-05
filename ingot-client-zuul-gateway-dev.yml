@@ -62,7 +62,7 @@ security:
   oauth2:
     client:
       client-id: ${spring.application.name}
-      client-secret: ingotClientGatewaySecret
+      client-secret: yd31PYIr1ZT1Oi6bh/U4oZD1+kuUSk3LnGsUKu6LQHg=
       access-token-uri: http://ingot-auth-center:8050/oauth/token
       user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
     resource:
