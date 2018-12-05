@@ -79,5 +79,6 @@ ingot:
   oauth2:
     resource:
       permit:
+        - /ac/auth/code/**
         - /ac/auth/login
         - /ac/auth/admin/login
