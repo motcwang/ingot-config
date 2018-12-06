@@ -18,8 +18,8 @@ spring:
   rabbitmq:
     host: ingot-mq-rabbit
     port: 5672
-    username: guest
-    password: guest
+    username: admin
+    password: admin
   redis:
     database: 1
     host: ${REDIS_HOST:ingot-db-redis}
