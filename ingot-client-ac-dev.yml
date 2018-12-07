@@ -32,4 +32,4 @@ ingot:
       - /auth/user/refreshToken
       - /auth/code/**
       - /login
-      - /test/a
+      - /test/**
