@@ -80,6 +80,6 @@ ingot:
     resource:
       permit:
         - /ac/auth/user/refreshToken
-        # - /ac/auth/code/**
+        - /ac/auth/code/**
         - /ac/auth/login
         - /ac/auth/admin/login
