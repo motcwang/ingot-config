@@ -34,4 +34,4 @@ ingot:
       - /login
       - /test/a
       userPermit:
-        - /a
+        - /a22
