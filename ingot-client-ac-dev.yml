@@ -25,7 +25,6 @@ ingot:
     dataCenterId: 0
     machineId: 0
   oauth2:
-    test: haha1
     tokenStore: jwt
     rsaSecret: 1asd21!@#asd12
     resource:
@@ -35,4 +34,4 @@ ingot:
       - /login
       - /test/a
       userPermit:
-        - /aa2
+        - /aa333
