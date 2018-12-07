@@ -33,5 +33,3 @@ ingot:
       - /auth/code/**
       - /login
       - /test/a
-      userPermit:
-        - /a22
