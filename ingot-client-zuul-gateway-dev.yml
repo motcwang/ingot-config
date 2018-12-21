@@ -23,8 +23,8 @@ zuul:
         MaxAutoRetries: 1
         MaxAutoRetriesNextServer: 2
         OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
+        ConnectTimeout: 20000
+        ReadTimeout: 20000
     uc-route:
       sensitiveHeaders:
       path: /uc/**
@@ -35,8 +35,8 @@ zuul:
         MaxAutoRetries: 1
         MaxAutoRetriesNextServer: 2
         OkToRetryOnAllOperations: false
-        ConnectTimeout: 10000
-        ReadTimeout: 10000
+        ConnectTimeout: 20000
+        ReadTimeout: 20000
 
 
 management:
