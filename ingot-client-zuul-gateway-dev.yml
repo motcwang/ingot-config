@@ -83,3 +83,4 @@ ingot:
         - /ac/auth/code/**
         - /ac/auth/login
         - /ac/auth/admin/login
+        - /test/aa
