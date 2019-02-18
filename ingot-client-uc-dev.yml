@@ -34,5 +34,3 @@ ingot:
   oauth2:
     resource:
       permit:
-        - /token
-        - /test/auth
