@@ -24,6 +24,10 @@ security:
       id: ingot-resource-ac
 
 ingot:
+  job:
+    xxl:
+      executor:
+        port: 9901
   validateCode:
     sms:
       expireIn: 300
