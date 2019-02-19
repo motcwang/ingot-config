@@ -27,7 +27,7 @@ ingot:
   job:
     xxl:
       executor:
-        port: 9901
+        port: 9902
   validateCode:
     sms:
       expireIn: 300
