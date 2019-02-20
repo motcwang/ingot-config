@@ -18,10 +18,15 @@ security:
     client:
       client-id: ${spring.application.name}
       client-secret: GwCwru42UrxQTUFLWOAsJqa3/+WSTlRMwiQDBq8KOgI=
-      access-token-uri: http://ingot-auth-center:8050/oauth/token
-      user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
+      access-token-uri: http://ingot-auth-center:${server.port}/oauth/token
+      user-authorization-uri: http://ingot-auth-center:${server.port}/oauth/authorize
     resource:
       id: ingot-resource-ac
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@ingot-eureka-node2:8001/eureka/,http://root:root@ingot-eureka-node2:8002/eureka/,http://root:root@ingot-eureka-node3:8003/eureka/
 
 ingot:
   job:
