@@ -23,10 +23,18 @@ security:
 ingot:
   validateCode:
     sms:
+      length: 6
       expireIn: 300
       mobileMaxSendCount: 10
       ipMaxSendCount: 10
       totalMaxSendCount: 50
+      url: /auth/mobile,/auth/appUser/modifyPasswordByMobile,/auth/admin/modifyPasswordByMobile
+    image:
+      length: 4
+      expireIn: 60
+      url: /auth/admin/login
+    email:
+      expireIn: 86400
   application:
     dataCenterId: 0
     machineId: 0
