@@ -30,6 +30,10 @@ ingot:
       totalMaxSendCount: 50
       url: /auth/mobile,/auth/appUser/modifyPasswordByMobile,/auth/admin/modifyPasswordByMobile
     image:
+      model: standard
+      ipModelDurationTime: 5
+      ipModelIntervalTime: 5
+      ipModelThreshold: 3
       length: 4
       expireIn: 60
       url: /auth/admin/login
