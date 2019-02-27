@@ -31,7 +31,9 @@ ingot:
       url: /auth/mobile,/auth/appUser/modifyPasswordByMobile,/auth/admin/modifyPasswordByMobile
     image:
       model: standard
-      ipModelDurationTime: 5
+      urlModel:
+        /auth/admin/login: ip
+      ipModelDurationTime: 10
       ipModelIntervalTime: 5
       ipModelThreshold: 3
       length: 4
