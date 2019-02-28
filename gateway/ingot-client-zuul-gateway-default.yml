@@ -79,6 +79,17 @@ proxy:
       uc-route: oauth2
 
 ingot:
+  job:
+    xxl:
+      admin:
+        addresses: http://${INGOT_TMC_HOST:ingot-task-manager-center}:8060
+      executor:
+        appname: ${spring.application.name}
+        ip:
+        port: 9700
+        logpath: /data/ingot/logs/${spring.application.name}/jobhandler
+        logretentiondays: -1
+      accessToken: asdae13qwe124123
   application:
     dataCenterId: 2
     machineId: 0
