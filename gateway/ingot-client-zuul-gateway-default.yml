@@ -62,7 +62,7 @@ security:
   oauth2:
     client:
       client-id: ${spring.application.name}
-      client-secret: yd31PYIr1ZT1Oi6bh/U4oZD1+kuUSk3LnGsUKu6LQHg=
+      client-secret: {cipher}AQAEAR9rn9ivyu63xH0Gug2M3pAtrBUH9F6tBAZcfw5jfeVuSmYTwiU+S9P0hx9TbC6Vo6ZMjvhR20UTZllxjP7hsaoDSpys6kVBYEB4EiMJdtNfmqbAr0n8dqKRb/wZ+ddE26MEOhaorGsULqvVJQ7h+clOTipGDwi7mGVyrKw/vDsb7tGWoalb/DLSSKK0WWQgdcOVXq/wTPydeziconlGYTIsYPMeGBZaHNG+Pbh7MNGKb1tLzy78dU4v+WRFI9ZX2yyTN/lPuaaDl7rH80ypvLl3Ym3bJSyaVrgffaTj+JTL7h0NYDypu92M5psLx5uwCqggyHtG7VbRiyCpwuvAjxiBEQ2cIwlpE8XSP4DZXCCHdsOelEP5SbCWE2pLAlNHnf9bHnsDeA2ZxMuiUDCVOdFUlftI5GMa0gB4ZX8vZg==%
       access-token-uri: http://ingot-auth-center:8050/oauth/token
       user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
     resource:
@@ -89,7 +89,7 @@ ingot:
         port: 9700
         logpath: /data/ingot/logs/${spring.application.name}/jobhandler
         logretentiondays: -1
-      accessToken: asdae13qwe124123
+      accessToken: {cipher}AQAtwvc5C4DtPRs979eH9vephJimHZMSy8Whv99+SC8P9h7dhZFEM2iyUQM7uyg04giLufDmPHye5YhzsMXuSDgAc+eky3B/CeCwnfSC0tcvuCekC6S/hpS6p/TYDv+oXbWqoGffQuE9IrjTC46rOv6C1fVOJRCy1vXqe8Xw6l6O2hBpO9NDrzf+lTRNi53XYrTwRPokuTehusF0s2XzfEG9JRET+tiVb8gxKv/cAUJYgBQcBFmqKiPFauQ20l3fxQHNNCd0H6KY0zlP4+75cNRo1MB4X8ukEEZF5c46bH2IBzy+6OJY5JTx+K2cudKsDHPEHzAXwzYIjdlAtQ/yKtqhzb46BohWNvizO7DzeemGjvYT5WJbgHfOMrDMjGboxtXDzYbONozy6NS2UsJERgxY%
   application:
     dataCenterId: 2
     machineId: 0
