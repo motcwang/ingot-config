@@ -21,6 +21,17 @@ security:
       id: ingot-resource-ac
 
 ingot:
+  job:
+    xxl:
+      admin:
+        addresses: http://${INGOT_TMC_HOST:ingot-task-manager-center}:8060
+      executor:
+        appname: ${spring.application.name}
+        ip:
+        port: 9900
+        logpath: /data/ingot/logs/${spring.application.name}/jobhandler
+        logretentiondays: -1
+      accessToken: asdae13qwe124123
   validateCode:
     sms:
       length: 6
@@ -45,6 +56,8 @@ ingot:
     dataCenterId: 0
     machineId: 0
   oauth2:
+    adminAuthType: standard
+    appAuthType: standard
     tokenStore: jwt
     rsaSecret: 1asd21!@#asd12
     resource:

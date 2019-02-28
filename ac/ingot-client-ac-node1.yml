@@ -1,28 +1,3 @@
-server:
-  port: 8051
-
-spring:
-  jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
-    time-zone: GMT+8
-    default-property-inclusion: non_null
-  datasource:
-    url: jdbc:mysql://${MYSQL_HOST:ingot-db-mysql}:${MYSQL_PORT:3306}/ingot_ac_db?useUnicode=true&characterEncoding=UTF8&useSSL=false
-
-mybatis:
-  type-aliases-package: com.ingot.auth.model.domain
-  mapper-locations: classpath*:mapper/*.xml,classpath*:sdk/mapper/*.xml
-
-security:
-  oauth2:
-    client:
-      client-id: ${spring.application.name}
-      client-secret: GwCwru42UrxQTUFLWOAsJqa3/+WSTlRMwiQDBq8KOgI=
-      access-token-uri: http://ingot-auth-center:${server.port}/oauth/token
-      user-authorization-uri: http://ingot-auth-center:${server.port}/oauth/authorize
-    resource:
-      id: ingot-resource-ac
-
 ingot:
   job:
     xxl:
@@ -30,28 +5,3 @@ ingot:
         addresses: http://ingot-task-manager-center:8061,http://ingot-task-manager-center:8062
       executor:
         port: 9901
-  validateCode:
-    sms:
-      length: 6
-      expireIn: 300
-      mobileMaxSendCount: 10
-      ipMaxSendCount: 10
-      totalMaxSendCount: 50
-      url: /auth/mobile,/auth/appUser/modifyPasswordByMobile,/auth/admin/modifyPasswordByMobile
-    image:
-      length: 4
-      expireIn: 60
-      url: /auth/admin/login
-    email:
-      expireIn: 86400
-  application:
-    dataCenterId: 0
-    machineId: 0
-  oauth2:
-    tokenStore: jwt
-    rsaSecret: 1asd21!@#asd12
-    resource:
-      permit:
-      - /auth/user/refreshToken
-      - /auth/code/**
-      - /auth/admin/modifyPasswordByMobile
