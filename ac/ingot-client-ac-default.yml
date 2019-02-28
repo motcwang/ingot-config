@@ -14,7 +14,7 @@ security:
   oauth2:
     client:
       client-id: ${spring.application.name}
-      client-secret: {cipher}QBxK6dskacuzi2O0XzAGRdSAec+ZtDT0m7HvUs0sjjhly/U39rSwIY6Do18yzbxbh60XUX3EXIRdXeBMKxNCh+ku4OFi8XtT2NndHgpUOUrieo6Vh2Tc4a/sZKFDaSJkMiLKllDc7oxlOLkaSPS3uaYB/3B2bV1v7matJwEdOBYUP75SHK4x0HAxF+1V9Rdt5U5eSA++emhndnq/VK2JmPbKSF7KlCyPElmtVIgyuM/nnZTxfD/C+XxyC9nzCSC4G7FQhPABhA9nPBS/2RouLQyuKtwDJUCahE9O8R+J4CpZh260B7qrfCA6sF496jjxmlOH0/wHL1FEdpJ0W6GFlY3JLzMct7u3L6cQyH1e2uZpXW+Lc+zu72oUMuAKfjnwKoA9fIk8BrCxajbQCUurnPholsvgxew2hvSB+KMhdXlIw==%
+      client-secret: {cipher}AQA9rcuiBhGTPTdJc9GIQ5AktG5nBWexxDWcC3HRf9CKOM3VZjxjopOLqZlyliM8z0/qiKGpXIFrKwM91yFahxc/YfvMsvv+7iCFkLYrsMg3RwaTJQnp/Zz49UVam8Cgqt0IA/TN1LtBn1+9D8n6VOIxT2qe9Y1YjeS5K5DA0y7yqHh3xjM7d2kMhVtYo7v9eq6INzUXoyekySc3mEVuhn+j21QOgrBCgoz3wuz1+NdrG4mdEEHHymXmy0kVgVKmkOrAUIjrWNLFPCI/EvWhLHH7RUVEGn7KKsACPsFqKSEMN/Dy/BOpzEGM7fSsvBoZi2vcGciYLyskRbLt8DuclpzA1UsBK5zSui6KPtsQBnIv8UarGH8RrWr7rYoz2cCEAESrRPhOZlOgeJYzvpHeprcCKO/2H2igvLvo/RM3dOhoKQ==
       access-token-uri: http://ingot-auth-center:8050/oauth/token
       user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
     resource:
@@ -31,7 +31,7 @@ ingot:
         port: 9900
         logpath: /data/ingot/logs/${spring.application.name}/jobhandler
         logretentiondays: -1
-      accessToken: {cipher}AQAtwvc5C4DtPRs979eH9vephJimHZMSy8Whv99+SC8P9h7dhZFEM2iyUQM7uyg04giLufDmPHye5YhzsMXuSDgAc+eky3B/CeCwnfSC0tcvuCekC6S/hpS6p/TYDv+oXbWqoGffQuE9IrjTC46rOv6C1fVOJRCy1vXqe8Xw6l6O2hBpO9NDrzf+lTRNi53XYrTwRPokuTehusF0s2XzfEG9JRET+tiVb8gxKv/cAUJYgBQcBFmqKiPFauQ20l3fxQHNNCd0H6KY0zlP4+75cNRo1MB4X8ukEEZF5c46bH2IBzy+6OJY5JTx+K2cudKsDHPEHzAXwzYIjdlAtQ/yKtqhzb46BohWNvizO7DzeemGjvYT5WJbgHfOMrDMjGboxtXDzYbONozy6NS2UsJERgxY%
+      accessToken: {cipher}AQAAyCI7/2E40wP2e5RMuZ6pgAETmxvQjaGuLHMIFHynP2tDC8LCo4t7mlRVgU0h+s8Jbxbb+e7pEG9th/HeyPfNQ+GfZQSTn5cfLtHbJMMZYLN7yKOYJl7I+9rku3OiYyJideYU4BYG+EMU+5Xzq+3zfsY7HvsPAn561wo9kfwjPWnRlPprwDJJgptfMygbjmbFoUo/jeJ/GXojALNME76oSp6gxl3bqrRaTfCGYL5iPZNJbXTMFgC1IyNpvaa+DUa6WQ1KD3Dk4wM3pmfe+OUQuaEL7W8hoyinlWidOjrFOvu+bQO7241jMFByKDFwxx3i/EAHQInu4brvaryS52dLijAoZC59oZuCghcxWzmVrbrXiAAgSOd6ZSTuQtmevRjD8qeXhmIsVuPXNEcmMAOm
   validateCode:
     sms:
       length: 6
@@ -59,7 +59,7 @@ ingot:
     adminAuthType: standard
     appAuthType: standard
     tokenStore: jwt
-    rsaSecret: {cipher}AQA7bBUZXJRaDo5FVAyjGLk8axLubNjtfOZZEC0ahDIzmN4Cu6ZDN0onztiCx1u58rDe0bSDnosVEGzy77pztr6pXLHR/3Onz+Lcts+/7a+UluBOnLO3OB/lOOF8x9fzyGC+zG8JOhcwvs8uUeGtDzkAyYQ8+oJGPVSHTGqsd1Ft2qcxAzL2PMGW0VQgPUDEC5NjDks6wO6tRew7aM/hM/RxyNixOZsQmCWm6223gLl/JoAeu5zhjyotUjTSUQz21Biu4Y651D2jWTQGVkp71QLeiepOTS2M5TvugCLuif2xWbvoPH6CdjRpg0rwpB19so7XaZNqWTbeH7hw8vNWZsPCnlmkqX0qA6F+xn+bkdpJ/0FTSKtDTaFAE+qoeza05q6THsmOIYHrCF3kzO5VivEB%
+    rsaSecret: {cipher}AQBIqqJOis4zCLsRPnEuz3eaoucZv018QYmYZrQAnFOIa1ML4hUoqJKcfjRT4OGrR+pwOlO5fngd/+kwqyGg9lPbTb/916tDwtrGhSUrwH6GRhl9zC9FNkzDVlCbPduenfcrX8bW/gAJ8UhtjBi2/ECSRmZYVT8Y5pM0NSulyrNtsxKJcEl7zSFL5kdrcnsiUpUfh+pyyCN35eioaphgYq2g1TDuCgVg+Cb6XIlQS2/HzoPcSTVB1Wm054x4e3IeyCkJ9tIXIqjgrA8x3xygSdg8mybx1tpg82fIWUJkMoQJv585SerZBZzcAe3vJX3q/2NWdp3daUEBxtcQBgfSTQ7Hp/mq/rxPdQ6PXptBzVlkObmJy06F+LqYZK+F5V6Pm5VzD5LyAsXjAJGO7VWTBUGP
     resource:
       permit:
       - /auth/user/refreshToken

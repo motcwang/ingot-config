@@ -27,7 +27,7 @@ security:
   oauth2:
     client:
       client-id: ${spring.application.name}
-      client-secret: {cipher}AQAgrRKhYuKjjnh6rCZGI0R6RE9r2VFBb9O+yPBRUvHJkn1oExOVERrmnx2gWLVrRyXyfWZu8GdACjLZg8MHZNMQw0FN0ooSw8LlT7p50eY4BUm7Ax3MHGAA0nCKMVWOui85OhydSIQUH2ws5CvL0yg4tZ3XUHCeyo3EFpys/TScT3Zp+rxjDBsFdcq1zUNXLPp4PFwskJj/8mTJNmF+RouHoPp8IS+RgO64UTBwG7Xeh6f1a+mjhu4mdDHXfeAq5ZTX6Nwk3ch4vJDWun4/4XhmO7YX/K6rEn8AE2H/QuJalzfniJBAgy6JmMk1v7EHZ08i1GHgt6yOGoJsV9O1cQ4r9Ome9Q1ZLt+lIgMU2s4KVIGd7LjWX3zMVXYVFdXYgOLlK4WFfHippZEY62tN5n3JFzfi9ipD1WfJE2GVVEbr1A==%
+      client-secret: {cipher}AQBxB1eI6JrOmnv/bzpeZEej+dQxEz/+BST3MJ47yafiFKKfiVF4tqwUyv/syPdQGOIniB8qAqavHXsWJDO8OrckpeVb9iAzoCV+h+KaCFme78ELfkQNN7k+d6J2RrA1/h9eLARolAR/ytehx5m7lGNNQnPTlr/LKHOCugV6Q0HqehLAu3T3pNXgtpOM3sa+lpMcM/Bx1B79KJKYqhE6UbI0I2RmyhfCoAaCUc8y/54sFsLGIxabtufMwM0zutgkYAI+CdveJUdJAA3JxCu8JV/DArYUcVY8IwEMa+5aqWL+Jw6TBdldyW5UDnI2rF2MX8oHj5EVe1NBjurZ3YZ77k6C55rqklNnl4LKRpJEvWOhd9FzkCoS/Yax8fKpgBMxrRmEmMvKsgvwDpbcb+F6HnTueLVoDZ1QpaLSh3L9yu/qOQ==
       access-token-uri: http://ingot-auth-center:8050/oauth/token
       user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
     resource:
