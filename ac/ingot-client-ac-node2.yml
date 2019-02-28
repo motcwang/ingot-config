@@ -2,6 +2,6 @@ ingot:
   job:
     xxl:
       admin:
-        addresses: http://ingot-task-manager-center:8061,http://ingot-task-manager-center:8062
+        addresses: http://${INGOT_TMC_HOST:ingot-task-manager-center}:8061,http://${INGOT_TMC_HOST:ingot-task-manager-center}:8062
       executor:
         port: 9902
