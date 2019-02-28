@@ -32,7 +32,7 @@ ingot:
     image:
       model: ip
       urlModel:
-        "/auth/admin/login": ip
+        \/auth\/admin\/login: ip
       ipModelDurationTime: 10
       ipModelIntervalTime: 5
       ipModelThreshold: 3
