@@ -1,3 +1,10 @@
+security:
+  oauth2:
+    client:
+      access-token-uri: http://ingot-auth-center:${server.port}/oauth/token
+      user-authorization-uri: http://ingot-auth-center:${server.port}/oauth/authorize
+
+
 ingot:
   job:
     xxl:
