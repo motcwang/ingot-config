@@ -23,11 +23,6 @@ security:
     resource:
       id: ingot-resource-ac
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://root:root@ingot-eureka-node2:8001/eureka/,http://root:root@ingot-eureka-node2:8002/eureka/,http://root:root@ingot-eureka-node3:8003/eureka/
-
 ingot:
   job:
     xxl:
