@@ -44,7 +44,7 @@ ingot:
       model: ip
       urlModel:
         auth-admin-login: ip
-      ipModelDurationTime: 86400
+      ipModelDurationTime: 3600
       ipModelIntervalTime: 5
       ipModelThreshold: 3
       length: 4
