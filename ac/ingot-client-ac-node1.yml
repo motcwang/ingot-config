@@ -4,8 +4,9 @@ security:
       access-token-uri: http://ingot-auth-center:${server.port}/oauth/token
       user-authorization-uri: http://ingot-auth-center:${server.port}/oauth/authorize
 
-
 ingot:
+  swagger:
+    enable: false
   job:
     xxl:
       admin:
