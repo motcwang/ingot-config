@@ -28,6 +28,9 @@ security:
         key-uri: http://ingot-auth-center:8050/oauth/token_key
 
 ingot:
+  swagger:
+    title: ${spring.application.name}
+    description: 用户中心
   job:
     xxl:
       admin:

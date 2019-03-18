@@ -78,6 +78,14 @@ proxy:
       ac-route: oauth2
       uc-route: oauth2
 
+# swagger butler配置
+swagger:
+  butler:
+    api-docs-path: v2/api-docs
+    swagger-version: 2.0
+    auto-generate-from-zuul-routes: true
+    generate-routes: uc-route
+
 ingot:
   job:
     xxl:
