@@ -21,6 +21,9 @@ security:
       id: ingot-resource-ac
 
 ingot:
+  swagger:
+    title: ${spring.application.name}
+    description: 鉴权中心
   job:
     xxl:
       admin:
