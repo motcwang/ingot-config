@@ -41,6 +41,8 @@ ingot:
   application:
     dataCenterId: 3
     machineId: 0
+  mq:
+    producerExchange: ingot.tmc
   oauth2:
     resource:
       permit:
