@@ -31,6 +31,16 @@ ingot:
   swagger:
     title: ${spring.application.name}
     description: 消息管理中心
+  mq:
+    producerExchange: ingot.mmc
+    producerTimeout: 30
+    consumerTimeout: 60
+    retryThreshold: 3
+    bindings:
+    -
+      exchangeName: ingot.uc
+      queueName: ingot.queue.uc
+      routingKey: ingot.queue.uc
   job:
     xxl:
       admin:

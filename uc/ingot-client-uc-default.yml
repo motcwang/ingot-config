@@ -31,6 +31,8 @@ ingot:
   swagger:
     title: ${spring.application.name}
     description: 用户中心
+  mq:
+    producerExchange: ingot.uc
   job:
     xxl:
       admin:
