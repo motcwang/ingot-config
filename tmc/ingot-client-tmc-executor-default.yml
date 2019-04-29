@@ -12,7 +12,7 @@ security:
   oauth2:
     client:
       client-id: ${spring.application.name}
-      client-secret: /MmJWO4qpgDUfD+BzWtnHpdKYMb4S6d2LzzjXwTwCG8=
+      client-secret: '{cipher}AQAWNdMRd1OSZEbXgQZBkIHcjnFRNc09VBJPKxHSQP4h9sFOnzSgyO5W5K6KGAyxcnUSNahwViQWx3piHlFsxKQeKre2fALcYEdq3uSpU6+NLPAeXv+iSXXMqiwiiC0ehCLgKshZGINOMaWbvOYpLRweKitNzhy30mga2YvPOLuXsY4asP33snIBypeFblc7o9sdeuntSRhF2q/V+WfjptW4xfVJlJl55GBnDX7NLHJByhOyXlyTu+ha+ntUZ4+Jy9Sjpxl9bfSo+/UuABSMeU3URQ9Oj741Gjh4DNmvmnM3PmTDn4jy1MiF+MBg4FYGq21RNIc01rOPJDMPyVx/ft2tlrCZ3WjtqNTb6JtDbSrQ/7WyRH+jgUqCIs78JXhhBbMwn+ygLfsi2IAKsOHQm7TTz5rFTP4X341AEcecCNIPAw=='
       access-token-uri: http://ingot-auth-center:8050/oauth/token
       user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
     resource:
