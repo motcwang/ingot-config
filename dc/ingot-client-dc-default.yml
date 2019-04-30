@@ -1,0 +1,52 @@
+spring:
+  mvc:
+    date-format: yyyy-MM-dd HH:mm:ss
+  jackson:
+    joda-date-time-format: yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:ingot-db-mysql}:${MYSQL_PORT:3306}/ingot_mmc_db?useUnicode=true&characterEncoding=UTF8&useSSL=false
+
+mybatis:
+  type-aliases-package: com.ingot.mmc.model.domain
+  mapper-locations: classpath*:mapper/*.xml,classpath*:sdk/mapper/*.xml
+
+security:
+  oauth2:
+    client:
+      client-id: ${spring.application.name}
+      client-secret: '{cipher}AQAUyK+ny2gzBKX5R5+ogQYYcV60D1f+ERiDJBiggdTkMosK5jxHM4kpsTZupUASFJRk9B7+TF7fMRcCwF7czI6DdqIfNJvaCz2JXv94tswawJoQV1AyJNROu2UfLZC4XxmNjmqeT4727/B+GPZvPwihAdr7czEgGQEhUp/nFjXUoHaGbrWSzPS+uhMJ+gXYF/rhxvnMYke5wOAj34dgLUuH2eIKWdl4R/T2iob2q+YaUF9k7fe5cnNypvLHzK5Iesbzaa/BZL7KSuVOat9IhGtLITZJ0wPoa2R1WJJqM9VJcMbel1lVrBDCQji35WRHMYxshsHXhHKfccDJ+PZZp66df2BNzcK1d7gnSym80UqKQR9vGW75kEF3IQWThmlyd0qvsbLnNqke7HZ41csiNEr2oBZysQvAZkmowxaDE4oKzA=='
+      access-token-uri: http://ingot-auth-center:8050/oauth/token
+      user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
+    resource:
+      id: ingot-resource-dc
+      user-info-uri: http://ingot-auth-center:8050/user
+      prefer-token-info: false
+      jwt:
+        key-uri: http://ingot-auth-center:8050/oauth/token_key
+
+ingot:
+  swagger:
+    title: ${spring.application.name}
+    description: 数据中心
+  mq:
+    producerExchange: ingot.dc
+  job:
+    xxl:
+      admin:
+        addresses: http://${INGOT_TMC_HOST:ingot-task-manager-center}:8060
+      executor:
+        appname: ${spring.application.name}
+        ip:
+        port: 9600
+        logpath: /data/ingot/logs/${spring.application.name}/jobhandler
+        logretentiondays: -1
+      accessToken: '{cipher}AQBJJhvHk73auGSmXMb1vcLoczSGzYWbjaL+TsKTnW1Fy+q28D4rl2v/jj8dVyzBcrSQ6sK95osOim0wkCsQuG+W1hKwUe6kBctrVvjnLNn9V3Ced+SCFvxKuwqBFO9qc/368RXTF0uiE17Yu7zgHX0LRHO318C1swkIieIOf4jPpKbKoBuOlhDutaArXHC8sNqjAibpJz7xs/f9Yw6O2B9nF3uTHtpr5U8NdAm9+BhHgPenW0rZvaZR68HOb3PElDQsEy9Y6CvXmD2mXaK0/kI0Tn79A/b0va4297Stta3cSAf+EORqafEhO1s6nockEEULDHITICFmXFS0lTVyx68bFScbpeVGGb3qcZNlW1zD02B1aCCU3nD5O4ozaEhZB1k3zGk6cZwDyEdCymeB7RrO'
+  application:
+    dataCenterId: 2
+    machineId: 0
+  oauth2:
+    resource:
+      permit:
