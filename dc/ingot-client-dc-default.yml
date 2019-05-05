@@ -7,17 +7,17 @@ spring:
     time-zone: GMT+8
     default-property-inclusion: non_null
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:ingot-db-mysql}:${MYSQL_PORT:3306}/ingot_mmc_db?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    url: jdbc:mysql://${MYSQL_HOST:ingot-db-mysql}:${MYSQL_PORT:3306}/ingot_dc_db?useUnicode=true&characterEncoding=UTF8&useSSL=false
 
 mybatis:
-  type-aliases-package: com.ingot.mmc.model.domain
+  type-aliases-package: com.ingot.dc.model.domain
   mapper-locations: classpath*:mapper/*.xml,classpath*:sdk/mapper/*.xml
 
 security:
   oauth2:
     client:
       client-id: ${spring.application.name}
-      client-secret: '{cipher}AQAUyK+ny2gzBKX5R5+ogQYYcV60D1f+ERiDJBiggdTkMosK5jxHM4kpsTZupUASFJRk9B7+TF7fMRcCwF7czI6DdqIfNJvaCz2JXv94tswawJoQV1AyJNROu2UfLZC4XxmNjmqeT4727/B+GPZvPwihAdr7czEgGQEhUp/nFjXUoHaGbrWSzPS+uhMJ+gXYF/rhxvnMYke5wOAj34dgLUuH2eIKWdl4R/T2iob2q+YaUF9k7fe5cnNypvLHzK5Iesbzaa/BZL7KSuVOat9IhGtLITZJ0wPoa2R1WJJqM9VJcMbel1lVrBDCQji35WRHMYxshsHXhHKfccDJ+PZZp66df2BNzcK1d7gnSym80UqKQR9vGW75kEF3IQWThmlyd0qvsbLnNqke7HZ41csiNEr2oBZysQvAZkmowxaDE4oKzA=='
+      client-secret: '{cipher}AQBuRJjpfborq2fcMg2Nx5sxZVW/MUFkZ6OntD1i0nhwC/jdCIpH/X6Os/Dm0YlXSlXotn22HKzQyx3KyQcLZZlOhcht4KEoJ4jY0ndOB1B9IjUj5VlUsJyE1BVOexHqjX0TR1GtgJisJ0z64W06Lwt3/ZUo4vVf2mhvBeayCPCE2B0FX73NGePzk3I8UeJ5sVYnc88uWiNViMK+89GO1MzN0XqKRV3YTEd/RDxiwS3SVwotWSRqxepoJA4m1U1rbdR4ut79+GZboSNATT0/Dsqr+74h6dZ+HQTmlNpZ+hG/laWzgIGCQ+ZDZLCvQKPfw/8mA4bhWSG6VDdLc36vFEWrbQ3HSzkcMpuj6fBDVK4ysdbQDXUW/QIsw/086MManuy7Kf8h0f1I+JfQRr+f4PJ/JWxKvzWJoZAqazDp6nvvjw=='
       access-token-uri: http://ingot-auth-center:8050/oauth/token
       user-authorization-uri: http://ingot-auth-center:8050/oauth/authorize
     resource:
@@ -45,7 +45,7 @@ ingot:
         logretentiondays: -1
       accessToken: '{cipher}AQBJJhvHk73auGSmXMb1vcLoczSGzYWbjaL+TsKTnW1Fy+q28D4rl2v/jj8dVyzBcrSQ6sK95osOim0wkCsQuG+W1hKwUe6kBctrVvjnLNn9V3Ced+SCFvxKuwqBFO9qc/368RXTF0uiE17Yu7zgHX0LRHO318C1swkIieIOf4jPpKbKoBuOlhDutaArXHC8sNqjAibpJz7xs/f9Yw6O2B9nF3uTHtpr5U8NdAm9+BhHgPenW0rZvaZR68HOb3PElDQsEy9Y6CvXmD2mXaK0/kI0Tn79A/b0va4297Stta3cSAf+EORqafEhO1s6nockEEULDHITICFmXFS0lTVyx68bFScbpeVGGb3qcZNlW1zD02B1aCCU3nD5O4ozaEhZB1k3zGk6cZwDyEdCymeB7RrO'
   application:
-    dataCenterId: 2
+    dataCenterId: 4
     machineId: 0
   oauth2:
     resource:
