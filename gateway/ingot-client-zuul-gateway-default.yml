@@ -49,6 +49,18 @@ zuul:
         OkToRetryOnAllOperations: false
         ConnectTimeout: 20000
         ReadTimeout: 20000
+    dc-route:
+      sensitiveHeaders:
+      path: /dc/**
+      service-id: ingot-client-dc
+      ribbon:
+        eager-load:
+          enabled: true
+        MaxAutoRetries: 1
+        MaxAutoRetriesNextServer: 2
+        OkToRetryOnAllOperations: false
+        ConnectTimeout: 20000
+        ReadTimeout: 20000
 
 
 management:
@@ -96,7 +108,7 @@ swagger:
     api-docs-path: v2/api-docs
     swagger-version: 2.0
     auto-generate-from-zuul-routes: true
-    generate-routes: uc-route,ac-route
+    generate-routes: uc-route,ac-route,dc-route
 
 ingot:
   job:
