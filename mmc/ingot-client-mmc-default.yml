@@ -52,9 +52,8 @@ ingot:
         logpath: /data/ingot/logs/${spring.application.name}/jobhandler
         logretentiondays: -1
       accessToken: '{cipher}AQBJJhvHk73auGSmXMb1vcLoczSGzYWbjaL+TsKTnW1Fy+q28D4rl2v/jj8dVyzBcrSQ6sK95osOim0wkCsQuG+W1hKwUe6kBctrVvjnLNn9V3Ced+SCFvxKuwqBFO9qc/368RXTF0uiE17Yu7zgHX0LRHO318C1swkIieIOf4jPpKbKoBuOlhDutaArXHC8sNqjAibpJz7xs/f9Yw6O2B9nF3uTHtpr5U8NdAm9+BhHgPenW0rZvaZR68HOb3PElDQsEy9Y6CvXmD2mXaK0/kI0Tn79A/b0va4297Stta3cSAf+EORqafEhO1s6nockEEULDHITICFmXFS0lTVyx68bFScbpeVGGb3qcZNlW1zD02B1aCCU3nD5O4ozaEhZB1k3zGk6cZwDyEdCymeB7RrO'
-  application:
-    dataCenterId: 2
-    machineId: 0
+  zookeeper:
+    zkAddressList: ingot-zookeeper:2181
   oauth2:
     resource:
       permit:

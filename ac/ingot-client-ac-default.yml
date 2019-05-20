@@ -58,9 +58,8 @@ ingot:
       url: /auth/admin/login
     email:
       expireIn: 86400
-  application:
-    dataCenterId: 0
-    machineId: 0
+  zookeeper:
+    zkAddressList: ingot-zookeeper:2181
   oauth2:
     adminAuthType: standard
     appAuthType: standard

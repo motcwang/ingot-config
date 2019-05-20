@@ -38,9 +38,8 @@ security:
         key-uri: http://ingot-auth-center:8050/oauth/token_key
 
 ingot:
-  application:
-    dataCenterId: 3
-    machineId: 0
+  zookeeper:
+    zkAddressList: ingot-zookeeper:2181
   mq:
     producerExchange: ingot.tmc
   oauth2:
