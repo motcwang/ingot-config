@@ -61,6 +61,18 @@ zuul:
         OkToRetryOnAllOperations: false
         ConnectTimeout: 20000
         ReadTimeout: 20000
+    mmc-route:
+      sensitiveHeaders:
+      path: /mmc/**
+      service-id: ingot-client-mmc
+      ribbon:
+        eager-load:
+          enabled: true
+        MaxAutoRetries: 1
+        MaxAutoRetriesNextServer: 2
+        OkToRetryOnAllOperations: false
+        ConnectTimeout: 20000
+        ReadTimeout: 20000
 
 
 management:
@@ -108,7 +120,7 @@ swagger:
     api-docs-path: v2/api-docs
     swagger-version: 2.0
     auto-generate-from-zuul-routes: true
-    generate-routes: uc-route,ac-route,dc-route
+    generate-routes: uc-route,ac-route,dc-route,mmc-route
 
 ingot:
   job:
