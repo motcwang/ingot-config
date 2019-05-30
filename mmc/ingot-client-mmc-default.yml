@@ -41,6 +41,10 @@ ingot:
       exchangeName: ingot.uc
       queueName: ingot.queue.uc
       routingKey: ingot.queue.uc
+    -
+      exchangeName: ingot.uc
+      queueName: ingot.queue.uc1
+      routingKey: ingot.queue.uc1
   job:
     xxl:
       admin:

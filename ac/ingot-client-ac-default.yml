@@ -26,7 +26,7 @@ ingot:
     description: 鉴权中心
   mq:
     producerExchange: ingot.ac
-    listenerQueues: ingot.queue.uc
+    listenerQueues: ingot.queue.uc,ingot.queue.uc1
   job:
     xxl:
       admin:
