@@ -49,3 +49,4 @@ ingot:
   oauth2:
     resource:
       permit:
+        - /admin/**
