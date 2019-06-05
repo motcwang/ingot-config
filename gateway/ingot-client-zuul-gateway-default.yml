@@ -137,6 +137,7 @@ ingot:
   oauth2:
     resource:
       permit:
+        - /uc/admin/**
         - /ac/auth/user/refreshToken
         - /ac/auth/code/**
         - /ac/auth/login
